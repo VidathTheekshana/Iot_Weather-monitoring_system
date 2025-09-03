@@ -99,10 +99,9 @@ You can download the mobile app to view local and global weather data:
 
 ### Mobile App Screenshots
 
-![Splash Screen](images/splashscreen.jpeg)
-![Home Screen](images/Home%20Screen.jpeg)
-![Dashboard Screen](images/Dashboard.jpeg)
-
+![Splash Screen](Images/splashscreen.jpeg)  
+![Home Screen](Images/Home%20Screen.jpeg)  
+![Dashboard Screen](Images/Dashboard.jpeg)
 ---
 
 ## Web Dashboard
