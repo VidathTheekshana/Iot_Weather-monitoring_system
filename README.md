@@ -1,6 +1,6 @@
 
 
-# 🌦 IoT Weather Monitoring System
+#  IoT Weather Monitoring System
 
 An IoT-based Weather Monitoring System using **ESP8266 (NodeMCU)**.
 The system measures **Temperature, Humidity, Air Quality (CO₂ concentration), and Pressure**, displaying the data on a **16x2 I2C LCD** while simultaneously uploading it to **ThingSpeak Cloud** for remote monitoring and analysis.
