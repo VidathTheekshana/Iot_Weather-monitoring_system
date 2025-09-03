@@ -30,7 +30,7 @@ The system measures **Temperature, Humidity, Air Quality (CO₂ concentration), 
 * DHT11 Sensor – Temperature & Humidity
 * MQ135 Gas Sensor – Air Quality (CO₂ ppm)
 * 16x2 LCD Display (with I2C module)
-* Rain Sensor 
+* Rain Sensor
 * ThingSpeak Cloud Platform
 * Mobile App – **developed using Flutter (APK available in `apk/app-release.apk`)**
 * Web Dashboard (hosted at GitHub Pages)
@@ -99,9 +99,9 @@ You can download the mobile app to view local and global weather data:
 
 ### Mobile App Screenshots
 
-![Splash Screen](images/splash_screen.jpeg)
-![Home Screen](images/homescreen.jpeg)
-![Dashboard Screen](images/dashboard.jpeg)
+![Splash Screen](images/splashscreen.jpeg)
+![Home Screen](images/Home%20Screen.jpeg)
+![Dashboard Screen](images/Dashboard.jpeg)
 
 ---
 
