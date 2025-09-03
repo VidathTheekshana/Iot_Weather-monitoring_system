@@ -55,11 +55,6 @@ Install the following libraries in **Arduino IDE** before uploading the code:
 ### Installation Steps
 
 1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/your-username/weather-station-x.git
-   cd weather-station-x
-   ```
 2. Open the `.ino` file in **Arduino IDE**
 3. Install the required libraries via **Library Manager**
 4. Update the following fields in the code:
