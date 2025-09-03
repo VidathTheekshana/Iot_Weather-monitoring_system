@@ -1,99 +1,92 @@
-#IoT Weather Monitoring System
-
-This project is an IoT-based Weather Monitoring System built using ESP8266 (NodeMCU). It is designed to measure Temperature, Humidity, Air Quality (CO₂ concentration), and Pressure.
-The collected data is displayed on a 16x2 I2C LCD and simultaneously uploaded to ThingSpeak Cloud for remote monitoring and analysis.
-
-Features
-
-Monitors Temperature and Humidity using a DHT11 sensor
-
-Detects Air Quality (CO₂ concentration) using an MQ135 gas sensor
-
-Displays simulated Pressure values on LCD and uploads to ThingSpeak
-
-Provides real-time sensor data on a 16x2 I2C LCD with progress bar visualization
-
-Uploads sensor readings to ThingSpeak Cloud for IoT integration
-
-Enables data access from anywhere through the ThingSpeak Dashboard
-
-Components Used
-
-ESP8266 (NodeMCU)
-
-DHT11 Sensor – Temperature & Humidity
-
-MQ135 Gas Sensor – Air Quality (CO₂ ppm)
-
-16x2 LCD Display (with I2C module)
-
-Rain Sensor (defined in code but not currently used)
-
-ThingSpeak Cloud Platform
-
-Required Libraries
-
-The following libraries must be installed in Arduino IDE before uploading the code:
-
-Adafruit_Sensor.h
-
-DHT.h
-
-ESP8266WiFi.h
-
-LiquidCrystal_I2C.h
-
-MQ135.h
-
-Wire.h
-
-Getting Started
-Installation Steps
-
-Clone this repository:
-
-git clone https://github.com/your-username/iot-weather-monitoring.git
-cd iot-weather-monitoring
 
 
-Open the .ino file in Arduino IDE
+# 🌦 IoT Weather Monitoring System
 
-Install the required libraries via Library Manager
+An IoT-based Weather Monitoring System using **ESP8266 (NodeMCU)**.
+The system measures **Temperature, Humidity, Air Quality (CO₂ concentration), and Pressure**, displaying the data on a **16x2 I2C LCD** while simultaneously uploading it to **ThingSpeak Cloud** for remote monitoring and analysis.
 
-Update the following fields in the code:
+---
 
-WiFi SSID and Password
+##  Features
 
-ThingSpeak API Key
+*  Monitors **Temperature & Humidity** using a DHT11 sensor
+*  Detects **Air Quality (CO₂ concentration)** using an MQ135 gas sensor
+*  Displays **simulated Pressure values** on LCD and uploads them to ThingSpeak
+*  Provides **real-time sensor data** on a 16x2 I2C LCD with progress bar visualization
+*  Uploads sensor readings to **ThingSpeak Cloud** for IoT integration
+*  Enables data access **from anywhere** via ThingSpeak Dashboard
 
-Select the board: NodeMCU 1.0 (ESP8266)
+---
 
-Upload the code to the ESP8266
+##  Components Used
 
-ThingSpeak Data Fields
-Field	Description
-Field 1	Temperature (°C)
-Field 2	Humidity (%)
-Field 3	Air Quality (CO₂ ppm)
-Field 4	Pressure (Pa - simulated)
-LCD Display
+* ESP8266 (NodeMCU)
+* DHT11 Sensor – Temperature & Humidity
+* MQ135 Gas Sensor – Air Quality (CO₂ ppm)
+* 16x2 LCD Display (with I2C module)
+* Rain Sensor *(defined in code but not currently used)*
+* ThingSpeak Cloud Platform
 
-The 16x2 I2C LCD shows live sensor readings and includes progress bar indicators for:
+---
 
-Temperature
+##  Required Libraries
 
-Humidity
+Install the following libraries in **Arduino IDE** before uploading the code:
 
-Air Quality
+* `Adafruit_Sensor.h`
+* `DHT.h`
+* `ESP8266WiFi.h`
+* `LiquidCrystal_I2C.h`
+* `MQ135.h`
+* `Wire.h`
 
-Pressure
+---
 
-Future Improvements
+##  Getting Started
 
-Replace simulated pressure values with a BMP180/BMP280 pressure sensor
+### Installation Steps
 
-Integrate the rain sensor for rainfall monitoring
+1. Clone this repository:
+2. Open the `.ino` file in **Arduino IDE**
+3. Install the required libraries via **Library Manager**
+4. Update the following fields in the code:
 
-Develop a mobile or web dashboard for advanced visualization
+   * WiFi **SSID** and **Password**
+   * ThingSpeak **API Key**
+5. Select the board: **NodeMCU 1.0 (ESP8266)**
+6. Upload the code to the ESP8266
 
-Add real-time alerts/notifications for abnormal weather or air quality conditions
+---
+
+##  ThingSpeak Data Fields
+
+| Field | Description               |
+| ----- | ------------------------- |
+| 1     | Temperature (°C)          |
+| 2     | Humidity (%)              |
+| 3     | Air Quality (CO₂ ppm)     |
+| 4     | Pressure (Pa – simulated) |
+
+---
+
+##  LCD Display
+
+The **16x2 I2C LCD** shows live sensor readings with **progress bar indicators** for:
+
+*  Temperature
+*  Humidity
+*  Air Quality
+*  Pressure
+
+---
+
+##  Future Improvements
+
+* Replace simulated pressure values with a **BMP180/BMP280 sensor**
+* Integrate the **Rain Sensor** for rainfall monitoring
+* Develop a **mobile/web dashboard** for advanced visualization
+* Add **real-time alerts/notifications** for abnormal weather or air quality conditions
+
+---
+
+
