@@ -1,8 +1,14 @@
 
-# IoT Weather Monitoring System
+# Weather Station X
 
 An IoT-based Weather Monitoring System using **ESP8266 (NodeMCU)**.
-The system measures **Temperature, Humidity, Air Quality (CO₂ concentration), and Pressure**, displaying the data on a **16x2 I2C LCD**, uploading it to **ThingSpeak Cloud**, and providing **mobile app access** for local and global weather monitoring.
+The system measures **Temperature, Humidity, Air Quality (CO₂ concentration), and Pressure**, displaying the data on a **16x2 I2C LCD**, uploading it to **ThingSpeak Cloud**, and providing **mobile app and web dashboard access** for local and global weather monitoring.
+
+---
+
+## Team Members
+
+* **B G D M M Samarjeewa** – IT23279070 – [IT23279070@my.sliit.lk](mailto:IT23279070@my.sliit.lk)
 
 ---
 
@@ -13,7 +19,7 @@ The system measures **Temperature, Humidity, Air Quality (CO₂ concentration), 
 * Displays **simulated Pressure values** on LCD and uploads them to ThingSpeak
 * Provides **real-time sensor data** on a 16x2 I2C LCD with progress bar visualization
 * Uploads sensor readings to **ThingSpeak Cloud** for IoT integration
-* Enables data access **from anywhere** via ThingSpeak Dashboard or mobile app
+* Enables data access **from anywhere** via ThingSpeak Dashboard, mobile app, or web dashboard
 * Mobile app shows **local sensor data** and **global weather information**
 
 ---
@@ -26,7 +32,8 @@ The system measures **Temperature, Humidity, Air Quality (CO₂ concentration), 
 * 16x2 LCD Display (with I2C module)
 * Rain Sensor 
 * ThingSpeak Cloud Platform
-* Mobile App (Flutter)
+* Mobile App – **developed using Flutter (APK available in apk folder)**
+* Web Dashboard (hosted at GitHub Pages)
 
 ---
 
@@ -50,8 +57,8 @@ Install the following libraries in **Arduino IDE** before uploading the code:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/iot-weather-monitoring.git
-   cd iot-weather-monitoring
+   git clone https://github.com/your-username/weather-station-x.git
+   cd weather-station-x
    ```
 2. Open the `.ino` file in **Arduino IDE**
 3. Install the required libraries via **Library Manager**
@@ -87,12 +94,27 @@ The **16x2 I2C LCD** shows live sensor readings with **progress bar indicators**
 
 ---
 
-## Mobile App Features
+## Mobile App
 
-* Displays **local sensor data** from the IoT system
-* Shows **global weather information** for selected locations
-* Syncs with **ThingSpeak Cloud** for real-time updates
-* Provides **dashboard with graphs and indicators**
+You can download the mobile app to view local and global weather data:
+
+[Download WeatherStationX APK](apk/WeatherStationX.apk)
+
+> ⚠️ Note: To install the APK on Android, enable "Install from unknown sources" in your device settings.
+
+### Mobile App Screenshots
+
+![Home Screen](images/app_home.png)
+![Dashboard Screen](images/app_dashboard.png)
+
+---
+
+## Web Dashboard
+
+A web dashboard has been created for **visualizing local and global weather data** from Weather Station X.
+You can access it here:
+
+[View Dashboard](https://mehan02.github.io)
 
 ---
 
