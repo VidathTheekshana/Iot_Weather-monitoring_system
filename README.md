@@ -32,7 +32,7 @@ The system measures **Temperature, Humidity, Air Quality (CO₂ concentration), 
 * 16x2 LCD Display (with I2C module)
 * Rain Sensor 
 * ThingSpeak Cloud Platform
-* Mobile App – **developed using Flutter (APK available in apk folder)**
+* Mobile App – **developed using Flutter (APK available in `apk/app-release.apk`)**
 * Web Dashboard (hosted at GitHub Pages)
 
 ---
@@ -93,14 +93,15 @@ The **16x2 I2C LCD** shows live sensor readings with **progress bar indicators**
 
 You can download the mobile app to view local and global weather data:
 
-[Download WeatherStationX APK](apk/WeatherStationX.apk)
+[Download WeatherStationX APK](apk/app-release.apk)
 
 > ⚠️ Note: To install the APK on Android, enable "Install from unknown sources" in your device settings.
 
 ### Mobile App Screenshots
 
-![Home Screen](images/app_home.png)
-![Dashboard Screen](images/app_dashboard.png)
+![Splash Screen](images/splash_screen.jpeg)
+![Home Screen](images/homescreen.jpeg)
+![Dashboard Screen](images/dashboard.jpeg)
 
 ---
 
@@ -121,5 +122,4 @@ You can access it here:
 * Add **real-time alerts/notifications** for abnormal weather or air quality conditions
 
 ---
-
 
